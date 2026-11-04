@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "ShiftCheque",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0E1B2A"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-secure-store",
+      "expo-sharing",
+      "expo-font",
+      "expo-local-authentication",
+      "expo-document-picker",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "backgroundColor": "#0E1B2A",
+          "resizeMode": "contain"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#D52B1E",
+          "defaultChannel": "shiftcheque-default"
+        }
+      ]
+    ],
+    "slug": "shiftcheque",
+    "scheme": "shiftcheque",
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#0E1B2A",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ],
+      "blockedPermissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_CONTACTS",
+        "android.permission.READ_SMS"
+      ],
+      "edgeToEdgeEnabled": true,
+      "package": "ca.shiftcheque.app.dev"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ca.shiftcheque.app.dev"
+    },
+    "extra": {
+      "packageName": "ca.shiftcheque.app.dev",
+      "buildEnvironment": "development"
+    }
+  }
+}
